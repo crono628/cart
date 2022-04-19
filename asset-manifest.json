@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cart/static/css/main.f4e02057.css",
+    "main.js": "/cart/static/js/main.f0942a5f.js",
+    "static/media/betamax.jpeg": "/cart/static/media/betamax.1f38a606f87aa200f7d0.jpeg",
+    "static/media/vcr.jpeg": "/cart/static/media/vcr.d5e64c0708ebf8ba11a4.jpeg",
+    "static/media/magnavox.jpeg": "/cart/static/media/magnavox.12bd11b62eb8c5b9d743.jpeg",
+    "static/media/panasonic.jpeg": "/cart/static/media/panasonic.b70a50f6806b9b96d993.jpeg",
+    "static/media/camcorder.jpeg": "/cart/static/media/camcorder.f287dbb06945110716cb.jpeg",
+    "index.html": "/cart/index.html",
+    "main.f4e02057.css.map": "/cart/static/css/main.f4e02057.css.map",
+    "main.f0942a5f.js.map": "/cart/static/js/main.f0942a5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4e02057.css",
+    "static/js/main.f0942a5f.js"
+  ]
+}
