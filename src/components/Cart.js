@@ -1,12 +1,12 @@
-import React from "react";
-import uniqid from "uniqid";
+import React from 'react';
+import uniqid from 'uniqid';
 
 const Cart = ({ items, onAdd, onRemove }) => {
   const cartItems = items.map((item) => (
     <div key={uniqid()} className="cart-item">
       <div className="cart-item-name">
         {item.name}
-        <div className="row">
+        <div className="cart-quantity">
           <button onClick={() => onRemove(item)}>-</button>
           <div>
             {item.qty} x ${item.price}
