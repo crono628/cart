@@ -5,7 +5,7 @@ const Nav = ({ quantity }) => {
   return (
     <nav className="nav-bar">
       <h1 className="nav-left">
-        <Link to={'/home'}>
+        <Link to={'/'}>
           <div>Nobody Beats the Wiz</div>
         </Link>
       </h1>

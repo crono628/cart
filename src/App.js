@@ -44,7 +44,7 @@ const App = () => {
       <Nav quantity={cartQuantity} />
       <div className="container">
         <Routes>
-          <Route path="/home" element={<Welcome />} />
+          <Route path="/" element={<Welcome />} />
           <Route
             path="/showroom"
             element={<Showroom inventory={data} onAdd={onAdd} />}
