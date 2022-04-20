@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import data from './components/data';
 import Cart from './components/Cart';
 import Nav from './components/Nav';
@@ -42,7 +42,7 @@ const App = () => {
       <Nav />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" exact element={<Welcome />} />
           <Route
             path="/showroom"
             element={<Showroom inventory={data} onAdd={onAdd} />}
