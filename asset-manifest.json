@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4e02057.css",
-    "main.js": "/static/js/main.052c0b50.js",
-    "static/media/betamax.jpeg": "/static/media/betamax.1f38a606f87aa200f7d0.jpeg",
-    "static/media/vcr.jpeg": "/static/media/vcr.d5e64c0708ebf8ba11a4.jpeg",
-    "static/media/magnavox.jpeg": "/static/media/magnavox.12bd11b62eb8c5b9d743.jpeg",
-    "static/media/panasonic.jpeg": "/static/media/panasonic.b70a50f6806b9b96d993.jpeg",
-    "static/media/camcorder.jpeg": "/static/media/camcorder.f287dbb06945110716cb.jpeg",
-    "index.html": "/index.html",
-    "main.f4e02057.css.map": "/static/css/main.f4e02057.css.map",
-    "main.052c0b50.js.map": "/static/js/main.052c0b50.js.map"
+    "main.css": "/cart/static/css/main.f4e02057.css",
+    "main.js": "/cart/static/js/main.da67c368.js",
+    "static/media/betamax.jpeg": "/cart/static/media/betamax.1f38a606f87aa200f7d0.jpeg",
+    "static/media/vcr.jpeg": "/cart/static/media/vcr.d5e64c0708ebf8ba11a4.jpeg",
+    "static/media/magnavox.jpeg": "/cart/static/media/magnavox.12bd11b62eb8c5b9d743.jpeg",
+    "static/media/panasonic.jpeg": "/cart/static/media/panasonic.b70a50f6806b9b96d993.jpeg",
+    "static/media/camcorder.jpeg": "/cart/static/media/camcorder.f287dbb06945110716cb.jpeg",
+    "index.html": "/cart/index.html",
+    "main.f4e02057.css.map": "/cart/static/css/main.f4e02057.css.map",
+    "main.da67c368.js.map": "/cart/static/js/main.da67c368.js.map"
   },
   "entrypoints": [
     "static/css/main.f4e02057.css",
-    "static/js/main.052c0b50.js"
+    "static/js/main.da67c368.js"
   ]
 }
