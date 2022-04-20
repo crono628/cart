@@ -13,7 +13,7 @@ const Nav = ({ quantity }) => {
         <Link to={'/showroom'}>
           <div>Store</div>
         </Link>
-        <Link to={'/cart'}>
+        <Link to={'/shopping-cart'}>
           <div className="cart">Cart {quantity}</div>
         </Link>
       </h3>

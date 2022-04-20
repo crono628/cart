@@ -48,7 +48,7 @@ const App = () => {
             element={<Showroom inventory={data} onAdd={onAdd} />}
           />
           <Route
-            path="/cart"
+            path="/shopping-cart"
             element={<Cart onRemove={onRemove} onAdd={onAdd} items={cart} />}
           />
         </Routes>
