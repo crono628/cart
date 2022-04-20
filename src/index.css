@@ -107,6 +107,8 @@ a {
 .cart-item button {
   width: 30px;
   height: 20px;
+  background-color: coral;
+  border-radius: 10px;
 }
 
 .cart-item-name {
