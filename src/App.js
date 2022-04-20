@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import data from "./components/data";
-import Cart from "./components/Cart";
-import Nav from "./components/Nav";
-import Showroom from "./components/Showroom";
-import Welcome from "./components/Welcome";
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import data from './components/data';
+import Cart from './components/Cart';
+import Nav from './components/Nav';
+import Showroom from './components/Showroom';
+import Welcome from './components/Welcome';
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -44,7 +44,7 @@ const App = () => {
       <Nav quantity={cartQuantity} />
       <div className="container">
         <Routes>
-          <Route path="/" exact element={<Welcome />} />
+          <Route path="/home" element={<Welcome />} />
           <Route
             path="/showroom"
             element={<Showroom inventory={data} onAdd={onAdd} />}
