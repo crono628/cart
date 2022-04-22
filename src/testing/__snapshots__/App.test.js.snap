@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> displays products from the navbar 1`] = `
+<div>
+  <nav
+    class="nav-bar"
+  >
+    <h1
+      class="nav-left"
+    >
+      <a
+        href="/"
+      >
+        <div>
+          Nobody Beats the Wiz
+        </div>
+      </a>
+    </h1>
+    <h3
+      class="nav-right"
+    >
+      <a
+        href="/showroom"
+      >
+        <div
+          data-testid="store-btn"
+        >
+          Store
+        </div>
+      </a>
+      <a
+        href="/shopping-cart"
+      >
+        <div
+          class="cart"
+        >
+          Cart
+           
+        </div>
+      </a>
+    </h3>
+  </nav>
+  <div
+    class="container"
+  >
+    <div
+      class="showroom-title"
+    >
+      <h1>
+        Products
+      </h1>
+      <div
+        class="showroom"
+      >
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://www.extremetech.com/wp-content/uploads/2015/11/772066351852676897.jpg"
+          />
+          <h4>
+            Sony Betamax
+          </h4>
+          <h6>
+            The future of home video, forever
+          </h6>
+          <div>
+            $
+            999
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://i.ebayimg.com/images/g/JcgAAOSwzI5fqssa/s-l400.jpg"
+          />
+          <h4>
+            Magnavox Camcorder
+          </h4>
+          <h6>
+            Worth the neck ache
+          </h6>
+          <div>
+            $
+            1299
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://i.ebayimg.com/images/g/sHUAAOSwxsNfpp5q/s-l400.jpg"
+          />
+          <h4>
+            Magnavox Giant Television
+          </h4>
+          <h6>
+            Guaranteed to occupy the most space in your living room
+          </h6>
+          <div>
+            $
+            1999
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2015/11/1971-02001-626x834.jpg?resize=480:*"
+          />
+          <h4>
+            Panasonic Stereo
+          </h4>
+          <h6>
+            8-track tapes are totally reliable
+          </h6>
+          <div>
+            $
+            799
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://i.pinimg.com/originals/10/ce/a6/10cea687c3426681f730d0fe048dbb83.jpg"
+          />
+          <h4>
+            JVC VCR
+          </h4>
+          <h6>
+            VCR. WE LOVE INITIALS
+          </h6>
+          <div>
+            $
+            399
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://cdn.pocket-lint.com/r/s/660x/assets/images/149611-gadgets-feature-iconic-gadgets-of-the-90s-amazing-gadgets-and-gizmos-from-yesteryear-image8-m7zv6rd9xn-jpg.webp?v1"
+          />
+          <h4>
+            Nintendo Gameboy
+          </h4>
+          <h6>
+            Do you hate batteries AND your eyes? Play Gameboy!
+          </h6>
+          <div>
+            $
+            199
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://i.insider.com/524c93b869bedd2663dc4091?width=1200&format=jpeg&auto=webp"
+          />
+          <h4>
+            Sony Walkman
+          </h4>
+          <h6>
+            Listen to music anywhere AND look cool
+          </h6>
+          <div>
+            $
+            149
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://i.insider.com/524c79596bb3f7ec2fabf524?width=1200&format=jpeg&auto=webp"
+          />
+          <h4>
+            Casio Calculator Watch
+          </h4>
+          <h6>
+            Do simple math ANYWHERE
+          </h6>
+          <div>
+            $
+            249
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div
+          class="showroom-item"
+        >
+          <img
+            src="https://i.insider.com/524c6dffeab8ea2d4a54fc7c?width=1200&format=jpeg&auto=webp"
+          />
+          <h4>
+            The Clapper
+          </h4>
+          <h6>
+            The future is now. Clap loudly and just enough times to control electricity.
+          </h6>
+          <div>
+            $
+            29
+          </div>
+          <button
+            data-testid="buy-button"
+          >
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<App/> shows the welcome page first 1`] = `
+<div>
+  <nav
+    class="nav-bar"
+  >
+    <h1
+      class="nav-left"
+    >
+      <a
+        href="/"
+      >
+        <div>
+          Nobody Beats the Wiz
+        </div>
+      </a>
+    </h1>
+    <h3
+      class="nav-right"
+    >
+      <a
+        href="/showroom"
+      >
+        <div
+          data-testid="store-btn"
+        >
+          Store
+        </div>
+      </a>
+      <a
+        href="/shopping-cart"
+      >
+        <div
+          class="cart"
+        >
+          Cart
+           
+        </div>
+      </a>
+    </h3>
+  </nav>
+  <div
+    class="container"
+  >
+    <img
+      class="welcome"
+      src="https://1.bp.blogspot.com/-cLCLe54gj7U/Xr7vQPbvsrI/AAAAAAAAFVs/AZMQq5-WbfwmGdHJmh-P2o3TQw0ugp7kQCLcBGAsYHQ/s1600/wiz%2Blogo.jpg"
+    />
+  </div>
+</div>
+`;

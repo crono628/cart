@@ -11,7 +11,7 @@ const Nav = ({ quantity }) => {
       </h1>
       <h3 className="nav-right">
         <Link to={'/showroom'}>
-          <div>Store</div>
+          <div data-testid="store-btn">Store</div>
         </Link>
         <Link to={'/shopping-cart'}>
           <div className="cart">

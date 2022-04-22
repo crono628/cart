@@ -7,7 +7,9 @@ const Item = ({ product, onAdd }) => {
       <h4>{product.name}</h4>
       <h6>{product.description}</h6>
       <div>${product.price}</div>
-      <button onClick={() => onAdd(product)}>Add To Cart</button>
+      <button data-testid="buy-button" onClick={() => onAdd(product)}>
+        Add To Cart
+      </button>
     </div>
   );
 };

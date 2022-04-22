@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Showroom data renders and has a buy button 1`] = `
+<div
+  class="showroom-title"
+>
+  <h1>
+    Products
+  </h1>
+  <div
+    class="showroom"
+  >
+    <div
+      class="showroom-item"
+    >
+      <img
+        src="https://www.extremetech.com/wp-content/uploads/2015/11/772066351852676897.jpg"
+      />
+      <h4>
+        Sony Betamax
+      </h4>
+      <h6>
+        The future of home video, forever
+      </h6>
+      <div>
+        $
+        999
+      </div>
+      <button
+        data-testid="buy-button"
+      >
+        Add To Cart
+      </button>
+    </div>
+  </div>
+</div>
+`;
