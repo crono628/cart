@@ -14,9 +14,13 @@ const Nav = ({ quantity }) => {
           <div data-testid="store-btn">Store</div>
         </Link>
         <Link to={'/shopping-cart'}>
-          <div className="cart">
+          <div className="cart-link">
             Cart{' '}
-            {quantity === 0 ? null : <span className="bubble">{quantity}</span>}
+            {quantity === 0 ? (
+              <div className="no-bubble"></div>
+            ) : (
+              <div className="bubble">{quantity}</div>
+            )}
           </div>
         </Link>
       </h3>

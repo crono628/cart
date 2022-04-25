@@ -6,13 +6,12 @@ const Cart = ({ items, onAdd, onRemove }) => {
     <div key={uniqid()} className="cart-item">
       <div className="cart-item-name">
         {item.name}
-        <div className="cart-quantity">
-          <button onClick={() => onRemove(item)}>-</button>
-          <div className="">
-            {item.qty} x ${item.price}
-          </div>
-          <button onClick={() => onAdd(item)}>+</button>
-        </div>
+        <div>${item.price}</div>
+      </div>
+      <div className="cart-quantity">
+        <button onClick={() => onRemove(item)}>-</button>
+        <div>{item.qty}</div>
+        <button onClick={() => onAdd(item)}>+</button>
       </div>
     </div>
   ));
@@ -32,6 +31,7 @@ const Cart = ({ items, onAdd, onRemove }) => {
       <h1>Cart</h1>
       {items.length > 0 && (
         <div className="cart-confirm">
+          <h5>(Free shipping for orders over $4,000!)</h5>
           <div className="cart-math">
             <table>
               <thead>
@@ -54,7 +54,7 @@ const Cart = ({ items, onAdd, onRemove }) => {
               </thead>
             </table>
           </div>
-          <div>{cartItems}</div>
+          <div className="cart-display">{cartItems}</div>
         </div>
       )}
       {items.length === 0 && <div>Cart is Empty</div>}

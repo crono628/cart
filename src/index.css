@@ -48,7 +48,7 @@ a {
 }
 
 .nav-right {
-  width: 30vw;
+  width: 35vw;
   max-width: 200px;
   justify-content: space-around;
   font-size: 1rem;
@@ -87,6 +87,7 @@ a {
 .cart-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   font-size: 1.2rem;
   max-width: 700px;
@@ -113,13 +114,28 @@ a {
 
 .cart-item-name {
   width: 70%;
+  flex: 1;
 }
 
 .bubble {
   background-color: red;
-  padding: 5px 10px 5px 10px;
+  padding: 1px;
+  margin-left: 5px;
   border-radius: 15px;
   color: white;
+  width: 35px;
+  text-align: center;
+}
+
+.no-bubble {
+  width: 35px;
+  margin-left: 5px;
+}
+
+.cart-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-quantity {
@@ -150,8 +166,8 @@ th {
 
 .cart-confirm {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: baseline;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   max-width: 700px;
 }
@@ -159,4 +175,12 @@ th {
 .cart-math {
   background-color: rgb(248, 190, 102);
   border-radius: 10px;
+  margin-top: 10px;
+}
+
+.cart-display {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
