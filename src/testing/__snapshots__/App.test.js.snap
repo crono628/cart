@@ -32,10 +32,16 @@ exports[`<App/> displays products from the navbar 1`] = `
         href="/shopping-cart"
       >
         <div
-          class="cart"
+          class="cart-link"
         >
           Cart
            
+          <div
+            class="no-bubble"
+            data-testid="quantity"
+          >
+            0
+          </div>
         </div>
       </a>
     </h3>
@@ -288,10 +294,16 @@ exports[`<App/> shows the welcome page first 1`] = `
         href="/shopping-cart"
       >
         <div
-          class="cart"
+          class="cart-link"
         >
           Cart
            
+          <div
+            class="no-bubble"
+            data-testid="quantity"
+          >
+            0
+          </div>
         </div>
       </a>
     </h3>
@@ -300,6 +312,7 @@ exports[`<App/> shows the welcome page first 1`] = `
     class="container"
   >
     <img
+      alt="the Wiz"
       class="welcome"
       src="https://1.bp.blogspot.com/-cLCLe54gj7U/Xr7vQPbvsrI/AAAAAAAAFVs/AZMQq5-WbfwmGdHJmh-P2o3TQw0ugp7kQCLcBGAsYHQ/s1600/wiz%2Blogo.jpg"
     />

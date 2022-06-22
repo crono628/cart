@@ -1,13 +1,6 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import {
-  cleanup,
-  fireEvent,
-  getByText,
-  render,
-  screen,
-  container,
-} from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
@@ -27,15 +20,14 @@ describe('<App/>', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
   it('displays products from the navbar', () => {
-    const { debug, container, getByTestId } = render(
+    const { container, getByTestId } = render(
       <MemoryRouter>
         <App />
       </MemoryRouter>
     );
     const store = getByTestId('store-btn');
-    fireEvent.click(store);
+    userEvent.click(store);
     expect(screen.getByText('Products')).toBeVisible();
     expect(container.firstChild).toMatchSnapshot();
-    debug();
   });
 });

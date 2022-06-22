@@ -1,9 +1,10 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import Showroom from '../components/Showroom';
 import App from '../App';
+import Item from '../components/Item';
 
 const data = [
   {
@@ -15,12 +16,14 @@ const data = [
   },
 ];
 
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+});
 
 describe('Showroom', () => {
   it('data renders and has a buy button', () => {
     const onAdd = jest.fn();
-    const { getByTestId, container, debug } = render(
+    const { getByTestId, container } = render(
       <Showroom onAdd={onAdd} inventory={data} />
     );
     const buyButton = getByTestId('buy-button');
@@ -32,4 +35,17 @@ describe('Showroom', () => {
     expect(onAdd).toBeCalledTimes(2);
     expect(container.firstChild).toMatchSnapshot();
   });
+});
+
+test('onAdd should be called', () => {
+  const mockProduct = jest.fn();
+  const mockAdd = jest.fn();
+
+  render(<Item product={mockProduct} onAdd={mockAdd} />);
+
+  const button = screen.getByRole('button', { name: 'Add To Cart' });
+  userEvent.click(button);
+  userEvent.click(button);
+  userEvent.click(button);
+  expect(mockAdd).toHaveBeenCalledTimes(3);
 });

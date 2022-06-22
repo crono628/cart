@@ -17,9 +17,11 @@ const Nav = ({ quantity }) => {
           <div className="cart-link">
             Cart{' '}
             {quantity === 0 ? (
-              <div className="no-bubble"></div>
+              <div data-testid="quantity" className="no-bubble"></div>
             ) : (
-              <div className="bubble">{quantity}</div>
+              <div data-testid="quantity" className="bubble">
+                {quantity}
+              </div>
             )}
           </div>
         </Link>

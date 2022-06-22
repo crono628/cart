@@ -8,8 +8,28 @@ import Welcome from './components/Welcome';
 
 const App = () => {
   const [cart, setCart] = useState([]);
+  const [available, setAvailable] = useState(data);
+
+  function deductInventory(product) {
+    let copy = [...available];
+    let found = copy.find((item) => item.id === product.id);
+    if (found.inventory > 0) {
+      found.inventory -= 1;
+    }
+    setAvailable(copy);
+  }
+
+  function addInventory(product) {
+    let copy = [...available];
+    let found = copy.find((item) => item.id === product.id);
+    if (found.inventory < 3) {
+      found.inventory += 1;
+    }
+    setAvailable(copy);
+  }
 
   const onAdd = (product) => {
+    deductInventory(product);
     const inBag = cart.find((item) => item.id === product.id);
     let copy = [...cart];
     if (inBag) {
@@ -21,9 +41,11 @@ const App = () => {
     } else {
       setCart([...copy, { ...product, qty: 1 }]);
     }
+    console.log(available);
   };
 
   const onRemove = (product) => {
+    addInventory(product);
     const inBag = cart.find((item) => item.id === product.id);
     let copy = [...cart];
     if (inBag.qty === 1) {
@@ -35,6 +57,8 @@ const App = () => {
         )
       );
     }
+
+    console.log(available);
   };
 
   const cartQuantity = cart.reduce((a, b) => a + b.qty, 0);
@@ -47,7 +71,7 @@ const App = () => {
           <Route path="/" element={<Welcome />} />
           <Route
             path="/showroom"
-            element={<Showroom inventory={data} onAdd={onAdd} />}
+            element={<Showroom inventory={available} onAdd={onAdd} />}
           />
           <Route
             path="/shopping-cart"
