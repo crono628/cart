@@ -41,7 +41,6 @@ const App = () => {
     } else {
       setCart([...copy, { ...product, qty: 1 }]);
     }
-    console.log(available);
   };
 
   const onRemove = (product) => {
@@ -57,8 +56,6 @@ const App = () => {
         )
       );
     }
-
-    console.log(available);
   };
 
   const cartQuantity = cart.reduce((a, b) => a + b.qty, 0);
