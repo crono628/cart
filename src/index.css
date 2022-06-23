@@ -75,6 +75,15 @@ a {
   border-radius: 10px;
 }
 
+.showroom-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.showroom-item img {
+  flex: 1;
+}
+
 .showroom {
   display: flex;
   flex-wrap: wrap;

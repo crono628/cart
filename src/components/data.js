@@ -20,7 +20,7 @@ const data = [
     src: 'https://i.ebayimg.com/images/g/sHUAAOSwxsNfpp5q/s-l400.jpg',
     description: 'Guaranteed to occupy the most space in your living room',
     price: 1999,
-    inventory: 3,
+    inventory: 0,
     id: 3,
   },
   {
@@ -52,7 +52,7 @@ const data = [
     src: 'https://i.insider.com/524c93b869bedd2663dc4091?width=1200&format=jpeg&auto=webp',
     description: 'Listen to music anywhere AND look cool',
     price: 149,
-    inventory: 3,
+    inventory: 0,
     id: 7,
   },
   {
