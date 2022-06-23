@@ -8,7 +8,7 @@ const Item = ({ product, onAdd }) => {
       <h6>{product.description}</h6>
       <div>${product.price}</div>
       {product.inventory <= 0 ? (
-        <button disabled>Add To Cart</button>
+        <button disabled>Out of Stock</button>
       ) : (
         <button data-testid="buy-button" onClick={() => onAdd(product)}>
           Add To Cart
