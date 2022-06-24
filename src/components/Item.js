@@ -5,8 +5,8 @@ const Item = ({ product, onAdd }) => {
     <div className="showroom-item">
       <img src={product.src} />
       <h4>{product.name}</h4>
-      <h6>{product.description}</h6>
-      <div>${product.price}</div>
+      <h6 className="description">{product.description}</h6>
+      <div className="price">${product.price}</div>
       {product.inventory <= 0 ? (
         <button disabled>Out of Stock</button>
       ) : (

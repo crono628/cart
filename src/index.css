@@ -78,13 +78,18 @@ a {
 .showroom-item {
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 150px;
+  justify-content: space-evenly;
+  height: 340px;
+  width: 160px;
+  margin: 1rem;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .showroom-item img {
-  flex: 1;
   width: 100%;
+  flex: 1;
 }
 
 .showroom {
