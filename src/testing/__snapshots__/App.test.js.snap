@@ -39,9 +39,7 @@ exports[`<App/> displays products from the navbar 1`] = `
           <div
             class="no-bubble"
             data-testid="quantity"
-          >
-            0
-          </div>
+          />
         </div>
       </a>
     </h3>
@@ -67,10 +65,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Sony Betamax
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             The future of home video, forever
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             999
           </div>
@@ -89,10 +91,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Magnavox Camcorder
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             Worth the neck ache
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             1299
           </div>
@@ -111,17 +117,21 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Magnavox Giant Television
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             Guaranteed to occupy the most space in your living room
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             1999
           </div>
           <button
-            data-testid="buy-button"
+            disabled=""
           >
-            Add To Cart
+            Out of Stock
           </button>
         </div>
         <div
@@ -133,10 +143,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Panasonic Stereo
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             8-track tapes are totally reliable
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             799
           </div>
@@ -155,10 +169,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             JVC VCR
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             VCR. WE LOVE INITIALS
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             399
           </div>
@@ -177,10 +195,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Nintendo Gameboy
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             Do you hate batteries AND your eyes? Play Gameboy!
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             199
           </div>
@@ -199,17 +221,21 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Sony Walkman
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             Listen to music anywhere AND look cool
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             149
           </div>
           <button
-            data-testid="buy-button"
+            disabled=""
           >
-            Add To Cart
+            Out of Stock
           </button>
         </div>
         <div
@@ -221,10 +247,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             Casio Calculator Watch
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             Do simple math ANYWHERE
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             249
           </div>
@@ -243,10 +273,14 @@ exports[`<App/> displays products from the navbar 1`] = `
           <h4>
             The Clapper
           </h4>
-          <h6>
+          <h6
+            class="description"
+          >
             The future is now. Clap loudly and just enough times to control electricity.
           </h6>
-          <div>
+          <div
+            class="price"
+          >
             $
             29
           </div>
@@ -301,9 +335,7 @@ exports[`<App/> shows the welcome page first 1`] = `
           <div
             class="no-bubble"
             data-testid="quantity"
-          >
-            0
-          </div>
+          />
         </div>
       </a>
     </h3>

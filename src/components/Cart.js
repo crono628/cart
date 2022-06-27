@@ -48,12 +48,22 @@ const Cart = ({ items, onAdd, onRemove }) => {
                   <div>${item.price}</div>
                 </div>
                 <div className="cart-quantity">
-                  <button onClick={() => onRemove(item)}>-</button>
+                  <button
+                    data-testid="remove-button"
+                    onClick={() => onRemove(item)}
+                  >
+                    -
+                  </button>
                   <div>{item.qty}</div>
                   {item.qty >= 3 ? (
                     <button disabled>+</button>
                   ) : (
-                    <button onClick={() => onAdd(item)}>+</button>
+                    <button
+                      data-testid="add-button"
+                      onClick={() => onAdd(item)}
+                    >
+                      +
+                    </button>
                   )}
                 </div>
               </div>

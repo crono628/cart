@@ -5,9 +5,7 @@ import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 
-afterEach(() => {
-  cleanup();
-});
+afterEach(cleanup);
 
 describe('<App/>', () => {
   it('shows the welcome page first', () => {

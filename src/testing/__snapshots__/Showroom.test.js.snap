@@ -19,10 +19,14 @@ exports[`Showroom data renders and has a buy button 1`] = `
       <h4>
         Sony Betamax
       </h4>
-      <h6>
+      <h6
+        class="description"
+      >
         The future of home video, forever
       </h6>
-      <div>
+      <div
+        class="price"
+      >
         $
         999
       </div>

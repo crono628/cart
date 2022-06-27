@@ -6,6 +6,8 @@ import Showroom from '../components/Showroom';
 import App from '../App';
 import Item from '../components/Item';
 
+afterEach(cleanup);
+
 const data = [
   {
     name: 'Sony Betamax',
